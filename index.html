@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <title>Food zone</title>
+</head>
+
+<body>
+  <header>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#" id="logo">
+          <i class="fas fa-apple-alt"> </i> foodzone
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-4">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container w-75">
+      <div class="input-group middle">
+        <input type="text" class="form-control" id="input" placeholder="Enter your food name"
+          aria-describedby="button-addon2" />
+        <button class="btn btn-danger" onclick="displayScearch()" type="button" id="button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="text-center mt-4 text-white fw-bold">
+      <h5 id="change">scearch food</h3>
+    </div>
+
+
+  </header>
+
+  <main class="main mt-5 mb-5">
+
+
+    <div class="container mt-5">
+      <div class="row g-3" id="row2">
+        <div class="col-12">
+          <div class="row g-5"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="text-center mt-4 text-danger mb-3 fw-bold">
+      <h3 id="mealname" class="fw-bold">Catagories</h3>
+    </div> -->
+
+
+
+
+    <div class="container mt-5 mx-auto">
+      <nav class="navbar navbar-expand-lg navbar-light  fw-bold">
+        <div class="container">
+          <ul class="navbar-nav mx-auto mb-5" id="scearch">
+            <li class="nav-item text-center">
+              <a class="nav-link"  href="#none" onclick="displayCatagoryApi()">categories</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#none" onclick="displayRandom()">random</a>
+            </li>
+            <li class="nav-item text-center" id="valu">
+              <a class="nav-link" href="#none"  onclick="">Food</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row g-5" id="row1">
+      </div>
+    </div>
+
+
+    <div class="container mt-4">
+      <div class="row g-5" id="row">
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row gx-3" id="row3">
+      </div>
+    </div>
+
+
+
+  </main>
+  <!-- javascript part start  -->
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

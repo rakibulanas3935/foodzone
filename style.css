@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.474),
+      rgba(186, 22, 52, 0.385)
+    ),
+    url(./project.jpg);
+  background-size: cover;
+  position: relative;
+}
+.fas {
+  color: white;
+}
+#button-addon2 {
+  background-color: rgb(250, 53, 53);
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+#button-addon2:hover {
+  background-color: rgb(252, 33, 33);
+}
+#input-addon2 {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.nav-item {
+  color: rgb(220, 217, 217);
+  font-weight: 600;
+}
+#logo {
+  color: white;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+.fa-apple-alt {
+  color: rgb(241, 78, 108);
+}
+.middle {
+  margin-top: 30vh;
+}
+.link:hover {
+  background-color: rgba(238, 21, 39, 0.316);
+  transform: scale(1.1);
+}
+.grid-box {
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  transition: 1s;
+}
+.grid-box:hover {
+  transform: scale(1.05);
+}
+.img-player img {
+  border-radius: 3%;
+}
