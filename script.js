@@ -1,7 +1,9 @@
 const row = document.getElementById("row");
 const changeValue = document.getElementById("change");
+
+const input = document.getElementById("input");
+
 const displayScearch = () => {
-  const input = document.getElementById("input");
   const inputValue = input.value;
   input.value = "";
   if (inputValue === "") {
@@ -9,11 +11,24 @@ const displayScearch = () => {
   } else {
     let url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`;
 
+    const ul = document.getElementById("scearch");
+    ul.innerHTML = `<li class="nav-item text-center">
+              <a class="nav-link"  href="#none" onclick="displayCatagoryApi()">categories</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#none" onclick="displayRandom()">random</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#none" onclick="displayScearch()">${inputValue}</a>
+            </li>`;
+
     fetch(url)
       .then((res) => res.json())
       .then((data) => displayScearchValue(data.meals));
   }
 };
+
+//create div
 
 const displayScearchValue = (foodname) => {
   row.innerHTML = "";
